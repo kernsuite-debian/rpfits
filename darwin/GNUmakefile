@@ -3,8 +3,9 @@
 # The RPFITS root directory.
 RPFITSROOT := ..
 
-# Only used for locating architecture-specific code in ../code/$(RPARCH)
-# (../code/darwin is currently symlink'd to ../code/linux).
+# Only used for locating architecture-specific code in
+# $(RPFITSROOT)/code/$(RPARCH) (note that $(RPFITSROOT)/code/darwin is
+# currently symlink'd to linux/).
 RPARCH := darwin
 
 # GNU Fortran and C compiler flags.  The definitions here are for the
