@@ -2,7 +2,7 @@ C-----------------------------------------------------------------------
 C
 C                     SUBROUTINE RPFITSOUT
 C
-C $Id: rpfitsout.f,v 1.33 2011/03/29 01:18:26 cal103 Exp $
+C $Id: rpfitsout.f,v 1.34 2011/12/11 23:47:35 cal103 Exp $
 C-----------------------------------------------------------------------
       subroutine RPFITSOUT (jstat, vis, weight, baseline, ut, u, v,
      +   w, flag, bin, if_no, sourceno)
@@ -53,6 +53,8 @@ C-----------------OTHER BITS & PIECES-----------------------------------
       equivalence (i_buff(1), buffer(1))
       equivalence (i_grphdr(1), grphdr(1))
       equivalence (sc_buf(1), sc_cal(1,1,1))
+
+      common /filelun/ lun
 
 C-------------------TEMPLATE FOR RPFITS HEADERS-------------------------
 
@@ -160,8 +162,6 @@ C-------------------TEMPLATE FOR RPFITS HEADERS-------------------------
      + 'PMRA    =                    0  / Proper motion RA (sect/day)',
      + 'PMDEC   =                    0  / Proper motion DEC (asec/day)',
      + 'PMEPOCH =                    0  / Ref epoch for proper motion'/
-
-      common /filelun/ lun
 
 C---------------------DECIDE ON FUNCTION--------------------------------
 

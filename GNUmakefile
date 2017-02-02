@@ -21,11 +21,11 @@
 #                  installed in $(PREFIX)/{lib,include,bin}.
 #
 # If you are trying to install the RPFITS library, please chdir to either the
-# linux, linux_64, sun4sol, darwin_ppc, or darwin_x86 sub-directory and run
-# GNU 'make' from there.  You may find it necessary to modify variable
-# definitions (as above) in the GNUmakefile there to suit your purposes.
+# darwin, linux, linux64, or sun4sol sub-directory and run GNU 'make' from
+# there.  You may find it necessary to modify variable definitions (as above)
+# in the GNUmakefile there to suit your purposes.
 #
-# $Id: GNUmakefile,v 1.15 2011/01/21 01:14:12 cal103 Exp $
+# $Id: GNUmakefile,v 1.16 2011/12/11 23:43:15 cal103 Exp $
 #-----------------------------------------------------------------------------
 ifndef RPFITSROOT
    RPFITSROOT := $(shell pwd)

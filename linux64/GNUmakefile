@@ -3,7 +3,8 @@
 # The RPFITS root directory.
 RPFITSROOT := ..
 
-# Only used for locating architecture-specific code in ./code/$(RPARCH).
+# Only used for locating architecture-specific code in
+# $(RPFITSROOT)/code/$(RPARCH).
 RPARCH := linux
 
 # GNU Fortran and C compiler flags.

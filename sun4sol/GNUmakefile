@@ -3,18 +3,21 @@
 # The RPFITS root directory.
 RPFITSROOT := ..
 
-# Only used for locating architecture-specific code in ./code/$(RPARCH).
+# Only used for locating architecture-specific code in
+# $(RPFITSROOT)/code/$(RPARCH).
 RPARCH := sun4sol
 
-# Sun Fortran and C compiler flags...
-FFLAGS := -O -u -xs
-CFLAGS := -O -xs
-
-# ...or if you have the GNU compilers installed and want to use them.
-# FC     := g77
-# FFLAGS := -g -O -fno-automatic -Wall -Wno-globals
-# CC     := gcc
-# CFLAGS := -g -O -Wall -Wno-parentheses
+ifndef USEGNU
+  # Sun Fortran and C compiler flags...
+  FFLAGS := -O -u -xs
+  CFLAGS := -O -xs
+else
+  # ...or if you want to use the GNU compilers.
+  FC     := gfortran
+  FFLAGS := -g -O -fno-automatic -Wall
+  CC     := gcc
+  CFLAGS := -g -O -Wall -Wno-parentheses
+endif
 
 RANLIB := ranlib
 
