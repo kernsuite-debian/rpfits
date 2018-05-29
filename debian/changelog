@@ -1,3 +1,9 @@
+rpfits (2.24.1-1kern1) bionic; urgency=medium
+
+  * New upstream version 2.24.1
+
+ -- KERN packaging <packaging@kernsuite.info>  Tue, 29 May 2018 11:02:43 +0000
+
 rpfits (2.24-1kern2) bionic; urgency=medium
 
   * new upstream release for bionic
