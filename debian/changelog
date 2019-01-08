@@ -1,3 +1,10 @@
+rpfits (2.25-1) bionic; urgency=medium
+
+  [ Gijs Molenaar ]
+  * New upstream version 2.25
+
+ -- KERN packaging <packaging@kernsuite.info>  Tue, 08 Jan 2019 16:21:28 +0200
+
 rpfits (2.24.1-1kern1) bionic; urgency=medium
 
   * New upstream version 2.24.1
